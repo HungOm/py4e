@@ -37,6 +37,21 @@ for name in names:
  	if name not in counts:
  		counts[name] = 1
  	else:
- 		counts[name] = counts[name]+1
+ 		counts[name] = counts[name]+1 #Adding the value(which is the count number)
 print(counts)
+#>>{'csev': 2, 'cwen': 2, 'zqian': 1}
 
+
+# ----------------------------
+print()
+print('=========='*2)
+print()
+print("Another way")
+print()
+
+counts = dict()
+names = ['csev','cwen','csev','zqian','cwen']
+for name in names:
+	counts[name]=counts.get(name,0)+1 #Adding the value(which is the count number)
+print(counts)
+#>>{'csev': 2, 'cwen': 2, 'zqian': 1}
